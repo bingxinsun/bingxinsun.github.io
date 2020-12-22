@@ -71,42 +71,46 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-Java枚举类" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2020/12/22/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2020-12-22T01:45:26.310Z" itemprop="datePublished">2020-12-22</time>
+    <a href="/2020/12/22/Java%E6%9E%9A%E4%B8%BE%E7%B1%BB/" class="article-date">
+  <time class="dt-published" datetime="2020-12-22T02:40:41.642Z" itemprop="datePublished">2020-12-22</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/12/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <h1 id="Java枚举类"><a href="#Java枚举类" class="headerlink" title="Java枚举类"></a>Java枚举类</h1><p><a name="flhed"></a></p>
+<h1 id="枚举的来源"><a href="#枚举的来源" class="headerlink" title="枚举的来源"></a>枚举的来源</h1><blockquote>
+<p>关键字 enum 可以将一组具名的值的有限集合创建为一种新的类型，而这些具名的值可以作为常规的程序组件使用。这是一种非常有用的功能<br>枚举类定义：枚举是（ 使用enum声明的、由一组预定义的本类型常量组成的 ）的引用数据类型，同时枚举类本身也是一个final class</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/2913339/1607342249193-e6bc225d-fcee-4009-b5f6-280d35fc32c2.jpeg#align=left&display=inline&height=271&margin=%5Bobject%20Object%5D&originHeight=271&originWidth=1080&size=0&status=done&style=none&width=1080"><br />枚举类是对状态类的简化, 如上的状态类,就可以简化为如下的形式<img src="https://cdn.nlark.com/yuque/0/2020/jpeg/2913339/1607342285281-9d727edc-faff-479d-8ef9-f9ff1a8ae85a.jpeg#align=left&display=inline&height=195&margin=%5Bobject%20Object%5D&originHeight=195&originWidth=1080&size=0&status=done&style=none&width=1080"><br />Java内部也支持枚举类,称为enum,声明方法如上所示</p>
+<blockquote>
+<p>Java中枚举类的实现原理<br>当使用enum声明类时,Java编译器会让该类自动实现一个抽象类:<br><img src="https://cdn.nlark.com/yuque/0/2020/png/2913339/1607342484360-df624490-65a9-4d3d-bbf6-656813516c38.png#align=left&display=inline&height=66&margin=%5Bobject%20Object%5D&name=image.png&originHeight=66&originWidth=596&size=7489&status=done&style=none&width=596" alt="image.png"><br>该抽象类中有一些方法以及属性<br><img src="https://cdn.nlark.com/yuque/0/2020/png/2913339/1607342560299-4fb4bb71-9b2b-4869-9f8a-cd3f7beb06df.png#align=left&display=inline&height=460&margin=%5Bobject%20Object%5D&name=image.png&originHeight=460&originWidth=425&size=25955&status=done&style=none&width=425" alt="image.png"><br><img src="https://cdn.nlark.com/yuque/0/2020/png/2913339/1607342659695-42036ac0-41f2-4a7b-9c54-2345b39df2d3.png#align=left&display=inline&height=87&margin=%5Bobject%20Object%5D&name=image.png&originHeight=87&originWidth=421&size=5197&status=done&style=none&width=421" alt="image.png"><br>需要注意的是,Java不允许我们在编码过程中直接继承Enum类,这个过程是由编译器在编译时自动继承并实现的,因此enum类也不能继承其他的类<br>所有的enum类都是final class,不可以再继承其他的类,其中的对象也都是final static的,同时其中的对象类型都是Enum类的对象,拥有以下构造方法<br><img src="https://cdn.nlark.com/yuque/0/2020/png/2913339/1607343447390-eeed2e43-f81b-49cd-bd6f-36612c847ea5.png#align=left&display=inline&height=492&margin=%5Bobject%20Object%5D&name=image.png&originHeight=492&originWidth=858&size=46045&status=done&style=none&width=858" alt="image.png"><br>该构造方法不能被外部引用,是Java编译器用于反应枚举类定义的方法<br>枚举类中也可以定义一个private的构造方法，用于构造本类中的枚举常量对象</p>
+</blockquote>
+<ul>
+<li>valueOf(String name) 方法<ul>
+<li>返回name所对应的enum对象,如果不存在则抛出异常</li>
+</ul>
+</li>
+<li>values()方法<ul>
+<li>该方法是编译器在编译时加入的一个static方法,其返回enum类中的所有对象</li>
+</ul>
+</li>
+<li>EnumObjent.ordinal()<ul>
+<li>该方法返回对象所在的枚举类对象排列的位置</li>
+</ul>
+</li>
+</ul>
+<p><strong>总结：枚举类是一类特殊的类，由编译器自动继承Enum类，本身为final类，类中所有的对象都是枚举类的常量对象，可拥有private构造方法</strong></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/12/22/hello-world/" data-id="ckizbvq8100008wug5ue58w6e" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/12/22/Java%E6%9E%9A%E4%B8%BE%E7%B1%BB/" data-id="ckizdtezf0000x8ug8ml14nqs" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -149,7 +153,7 @@
       <ul>
         
           <li>
-            <a href="/2020/12/22/hello-world/">Hello World</a>
+            <a href="/2020/12/22/Java%E6%9E%9A%E4%B8%BE%E7%B1%BB/">(no title)</a>
           </li>
         
       </ul>
