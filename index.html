@@ -8,6 +8,12 @@
 <body bgcolor="#f0e68c">
 </body>
     <script>
+        console.log("    ____                    _          ____                  _              __\n" +
+            "   /  _/_____ ____ _ _____ (_)_____   / __ \\ _____ ____     (_)___   _____ / /_\n" +
+            "   / / / ___// __ `// ___// // ___/  / /_/ // ___// __ \\   / // _ \\ / ___// __/\n" +
+            " _/ / / /__ / /_/ // /   / /(__  )  / ____// /   / /_/ /  / //  __// /__ / /_\n" +
+            "/___/ \\___/ \\__,_//_/   /_//____/  /_/    /_/    \\____/__/ / \\___/ \\___/ \\__/\n" +
+            "                                                      /___/")
     <!-- ClickEffect-->
     function clickEffect() {
         let balls = [];
@@ -103,7 +109,7 @@
                 balls.push(new Ball(x, y));
             }
         }
-        function randBetween(min, max) {
+        function randBetween(min, max){
             return Math.floor(Math.random() * max) + min;
         }
         function loop() {
@@ -129,7 +135,8 @@
         function removeBall() {
             for (let i = 0; i < balls.length; i++) {
                 let b = balls[i];
-                if (b.x + b.r < 0 || b.x - b.r > width || b.y + b.r < 0 || b.y - b.r > height || b.r < 0) {
+                if (b.x + b.r < 0 || b.x - b.r > width || b.y + b.r < 0 ||
+                    b.y - b.r > height || b.r < 0) {
                     balls.splice(i, 1);
                 }
             }
@@ -139,10 +146,11 @@
     <!-- End Click Effect -->
 </script>
     <div id="introduction" class="welcome pages">
-        <img src="pics/1.jpg">
-        <img src="pics/2.jpg">
-        <img src="pics/3.jpg">
-        <img src="pics/4.jpg">
-        <img src="pics/5.jpg">
+<!--        <h1 style="font-family:Consolas;font-size:200px;color:yellow;">Ne RURSUS MIHI</h1>-->
+        <img src="pics/1.jpg" alt="Pareo">
+        <img src="pics/2.jpg" alt="Chu²">
+        <img src="pics/3.jpg" alt="Lock">
+        <img src="pics/4.jpg" alt="Layer">
+        <img src="pics/5.jpg" alt="Masking">
     </div>
 </html>
