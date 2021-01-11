@@ -1,7 +1,9 @@
 div.img{
     all-space-treatment:"NO_DATA";
 }
-
+body{
+    background-color: #f0e68c;
+}
 div{
     display: block;
     border: aqua;
