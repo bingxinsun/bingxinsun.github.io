@@ -1,10 +1,13 @@
-div.img{
-    all-space-treatment:"NO_DATA";
+
+@font-face{"fonts/sarasa-mono-sc-regular.ttf"}
+div>img{
+    display: block;
+    border: 3px solid #f0e68c;
+    box-shadow: 20px 10px 3px aqua;
 }
 body{
     background-color: #f0e68c;
 }
 div{
     display: block;
-    border: aqua;
 }
