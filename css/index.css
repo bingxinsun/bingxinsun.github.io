@@ -1,6 +1,8 @@
 
-@font-face{font-family:"sarasa-mono-sc-regular";
-            src: url("https://magic.satdg.xyz//fonts//sarasa-mono-sc-regular.ttf")}
+@font-face{
+    font-family:"Sarasa Mono SC";
+    src: url("https://magic.satdg.xyz//fonts//sarasa-mono-sc-regular.ttf")
+}
 div>img{
     display: block;
     border: 3px solid #f0e68c;
@@ -8,6 +10,7 @@ div>img{
 }
 body{
     background-color: #f0e68c;
+    font-family: "Sarasa Mono SC", serif;
 }
 div{
     display: block;
