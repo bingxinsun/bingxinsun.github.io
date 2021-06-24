@@ -1,3 +1,6 @@
+window.onload = function () {
+    clickEffect();
+}
 function clickEffect() {
     console.log("ClickEffect started")
     let balls = [];
